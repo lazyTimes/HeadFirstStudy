@@ -13,4 +13,10 @@ public interface DecorationDrink {
      * 装饰接口
      */
     void decoration();
+
+    /**
+     * 计算售价
+     * @return
+     */
+    int coat();
 }

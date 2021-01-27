@@ -7,12 +7,17 @@ package com.headfirst.decoration.use;
  * @version 1.0
  * @date 2021/1/27 23:12
  */
-public class Cocnut implements DecorationDrink{
+public class Cocnut extends DecorationAbstract implements DecorationDrink{
 
     private DecorationDrink decorationDrink;
 
     public Cocnut(DecorationDrink decorationDrink) {
         this.decorationDrink = decorationDrink;
+    }
+
+    @Override
+    public int coat() {
+        return super.coat() + 1;
     }
 
     @Override

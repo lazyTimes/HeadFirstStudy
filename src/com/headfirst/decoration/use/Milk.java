@@ -7,7 +7,7 @@ package com.headfirst.decoration.use;
  * @version 1.0
  * @date 2021/1/27 23:05
  */
-public class Milk implements DecorationDrink{
+public class Milk extends DecorationAbstract implements DecorationDrink{
 
     private DecorationDrink decorationDrink;
 

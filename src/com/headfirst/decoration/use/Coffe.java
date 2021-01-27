@@ -23,4 +23,9 @@ public class Coffe implements DecorationDrink{
     public void decoration() {
         System.out.println("我是咖啡");
     }
+
+    @Override
+    public int coat() {
+        return 0;
+    }
 }
