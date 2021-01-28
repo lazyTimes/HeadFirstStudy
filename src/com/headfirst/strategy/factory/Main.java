@@ -13,6 +13,11 @@ import java.util.Map;
  * @date 2021/1/28 22:01
  */
 public class Main {
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         // 模拟交易流转参数对象
         Map<String, Object> objectObjectHashMap = new HashMap<>();
@@ -32,5 +37,8 @@ public class Main {
         strategy = strategyFactory.createStrategy("blacklist");
         objectObjectHashMap.put("flag", true);
         strategy.warning(objectObjectHashMap);
-    }
+    }/*结果如下：
+    警告，当前数据内容无法获取返回值
+    触犯黑名单列表，但不警告
+    */
 }
