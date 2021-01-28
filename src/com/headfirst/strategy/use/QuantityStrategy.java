@@ -14,6 +14,10 @@ import java.util.Map;
 public class QuantityStrategy implements CaveatStrategy {
     @Override
     public void warning(Map<String, Object> params) {
-        params.get("");
+        int limit = Integer.parseInt(params.get("limit").toString());
+        int count = Integer.parseInt(params.get("count").toString());
+        if(count > limit){
+            System.err.println("警告，当前数据内容无法获取返回值");
+        }
     }
 }
