@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * 警告策略的工生成厂
+ * 警告策略的生成厂
  *
  * @author zxd
  * @version 1.0
