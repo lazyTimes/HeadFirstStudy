@@ -37,8 +37,7 @@ public class Pearl extends Codiment implements DrinkAbstract{
     /**
      * 详细信息
      */
-    protected String description(){
+    private void description(){
         drinkAbstract.plusAdditionVal();
-        return "";
     }
 }

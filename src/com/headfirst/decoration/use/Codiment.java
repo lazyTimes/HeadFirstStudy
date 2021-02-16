@@ -8,7 +8,7 @@ package com.headfirst.decoration.use;
  * @version 1.0
  * @date 2021/2/7 22:23
  */
-public abstract class Codiment implements DrinkAbstract{
+public class Codiment implements DrinkAbstract{
 
 
     /**
