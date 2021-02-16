@@ -14,4 +14,9 @@ public class MouseTankFactory implements TankFactory {
     public MouseTank createTank() {
         return new MouseTank();
     }
+
+    @Override
+    public Cannon createCannon() {
+        return new RocketLauncher();
+    }
 }

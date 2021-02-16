@@ -1,4 +1,6 @@
-package com.headfirst.factory.use;
+package com.headfirst.factory.abstractfac;
+
+import com.headfirst.factory.use.Tank;
 
 import java.util.ArrayList;
 
@@ -10,6 +12,14 @@ import java.util.ArrayList;
  * @date 2021/1/25 21:58
  */
 public class MyTank extends Tank {
+
+    private Cannon cannon;
+
+    public void display() {
+        if (cannon != null){
+            cannon.display();
+        }
+    }
 
     public MyTank() {
         // 我方坦克假设只有一条命
@@ -30,15 +40,16 @@ public class MyTank extends Tank {
     public void attack() {
         System.err.println("攻击地方坦克");
         // ..弹出子弹
-        if(bullet.size() == 0){
+        if (bullet.size() == 0) {
             System.err.println("没有子弹了");
             return;
         }
-        bullet.remove(bullet.get(bullet.size() -1));
+        bullet.remove(bullet.get(bullet.size() - 1));
     }
 
     @Override
     public void stop() {
         System.err.println("停止");
     }
+
 }

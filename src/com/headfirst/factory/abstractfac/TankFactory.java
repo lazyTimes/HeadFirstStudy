@@ -21,4 +21,10 @@ public interface TankFactory {
      * @return
      */
     Tank createTank();
+
+    /**
+     * 大炮的创建方法
+     * @return
+     */
+    Cannon createCannon();
 }

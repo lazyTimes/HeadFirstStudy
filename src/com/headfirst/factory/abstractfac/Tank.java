@@ -1,6 +1,4 @@
-package com.headfirst.factory.use;
-
-import com.headfirst.factory.abstractfac.Cannon;
+package com.headfirst.factory.abstractfac;
 
 import java.util.List;
 
@@ -24,7 +22,11 @@ public abstract class Tank {
      */
     protected List<Object> bullet;
 
-    private Cannon cannon;
+
+    /**
+     *
+     */
+    protected Cannon cannon;
 
     /**
      * 移动的方法s
@@ -34,18 +36,12 @@ public abstract class Tank {
     /**
      * 攻击
      */
-    public abstract void attack();
+    abstract void attack();
 
     /**
      * 停止
      */
-    public abstract void stop();
+    abstract void stop();
 
-    public Cannon getCannon() {
-        return cannon;
-    }
-
-    public void setCannon(Cannon cannon) {
-        this.cannon = cannon;
-    }
+    abstract void display();
 }
