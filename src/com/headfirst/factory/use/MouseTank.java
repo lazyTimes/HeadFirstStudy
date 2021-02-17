@@ -30,12 +30,12 @@ public class MouseTank extends Tank implements Runnable {
     }
 
     @Override
-    void move() {
+    public void move() {
         System.err.println("老鼠坦克移动");
     }
 
     @Override
-    void attack() {
+    public void attack() {
         System.err.println("老鼠坦克开枪");
         // ..弹出子弹
         if (bullet.size() <= 0) {
@@ -47,7 +47,7 @@ public class MouseTank extends Tank implements Runnable {
     }
 
     @Override
-    void stop() {
+    public void stop() {
         System.err.println("停止");
     }
 

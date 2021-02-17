@@ -13,13 +13,6 @@ import java.util.ArrayList;
  */
 public class MyTank extends Tank {
 
-    private Cannon cannon;
-
-    public void display() {
-        if (cannon != null){
-            cannon.display();
-        }
-    }
 
     public MyTank() {
         // 我方坦克假设只有一条命

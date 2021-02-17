@@ -48,4 +48,13 @@ public abstract class Tank {
     public void setCannon(Cannon cannon) {
         this.cannon = cannon;
     }
+
+    @Override
+    public String toString() {
+        return "Tank{" +
+                "hp=" + hp +
+                ", bullet=" + bullet +
+                ", cannon=" + cannon +
+                '}';
+    }
 }

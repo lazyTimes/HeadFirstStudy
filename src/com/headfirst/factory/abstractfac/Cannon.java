@@ -14,4 +14,6 @@ public abstract class Cannon {
      * 外观
      */
     public abstract void display();
+
+
 }
