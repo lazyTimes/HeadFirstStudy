@@ -1,7 +1,5 @@
 package com.headfirst.factory.non;
 
-import org.junit.Test;
-
 /**
  * 单元测试
  *
