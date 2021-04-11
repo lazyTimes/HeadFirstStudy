@@ -19,6 +19,9 @@ public class TaskItemlIterator implements Iterator{
 
     @Override
     public boolean hasNext() {
+        if(taskItems.isEmpty()){
+            return false;
+        }
         TaskItem peek = taskItems.peek();
         return peek != null;
     }

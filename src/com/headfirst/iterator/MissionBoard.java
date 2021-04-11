@@ -11,7 +11,16 @@ import java.util.Stack;
  */
 public class MissionBoard implements Travelsable {
 
-    private Stack<TaskItem> taskItems = new Stack<>();
+    private Stack<TaskItem> taskItems;
+
+    public MissionBoard() {
+        taskItems = new Stack<>();
+        taskItems.push(new TaskItem("任务1", 10));
+        taskItems.push(new TaskItem("任务2", 1230));
+        taskItems.push(new TaskItem("任务3", 123));
+        taskItems.push(new TaskItem("任务4", 414));
+        taskItems.push(new TaskItem("任务5", 555));
+    }
 
     @Override
     public Iterator createIterator() {

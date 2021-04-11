@@ -1,5 +1,7 @@
 package com.headfirst.iterator;
 
+import java.util.Stack;
+
 /**
  * 迭代器实现类
  *
@@ -9,18 +11,27 @@ package com.headfirst.iterator;
  */
 public class ConcreteCatalogIterator implements Iterator {
 
+    private int index;
+
+    private TaskItem[] taskItems;
+
+    public ConcreteCatalogIterator(TaskItem[] taskItems) {
+        this.index = 0;
+        this.taskItems = taskItems;
+    }
+
     @Override
     public boolean hasNext() {
-        return false;
+        return index++ < taskItems.length - 1;
     }
 
     @Override
     public Object next() {
-        return null;
+        return taskItems[index];
     }
 
     @Override
     public void remove(Object ele) {
-
+        throw new UnsupportedOperationException("数组不支持当前操作");
     }
 }
