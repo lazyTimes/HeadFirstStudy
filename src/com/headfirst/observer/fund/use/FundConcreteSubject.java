@@ -40,7 +40,7 @@ public class FundConcreteSubject implements FundSubject {
     @Override
     public void notifyAllObserver() {
 
-        list.forEach(item -> item.change(nownum));
+//        list.forEach(item -> item.change(nownum));
     }
 
     private void change() {
