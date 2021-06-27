@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * 新生代回收 MINOR GC回收新生代空间
- * 配置：-verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGcDetail -XX:SurvivorRatio=8 -XX:+UseSerialGC
+ * 配置：-verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+UseSerialGC
  * 含义：堆大小20M，其中10M给新生代，10M给老年代
  * -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8
  * 注意事项：
@@ -26,7 +26,6 @@ public class MinorGcTest {
 //        allocation1 = new byte[_1MB * 2];
 //        allocation2 = new byte[_1MB * 2];
 //        allocation3 = new byte[_1MB * 2];
-        // 第一次minorGc因为空间内润不足，使用老年代区存储
 //        allocation4 = new byte[_1MB * 4];
 
     }/*JDK 1.7.0_51 运行结果：
