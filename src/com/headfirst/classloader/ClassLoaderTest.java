@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 /**
  * 类加载器的实战部分
- * @authro zxd
+ * @author zxd
  */
 public class ClassLoaderTest {
 
