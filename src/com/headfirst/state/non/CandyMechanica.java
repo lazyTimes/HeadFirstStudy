@@ -96,6 +96,9 @@ public class CandyMechanica {
                 sold_state = NOT;
                 System.out.println("当前已经存在硬币，请勿重复投放");
                 break;
+            case SOLD_OUT:
+                System.out.println("已经售罄");
+                break;
 
         }
     }
