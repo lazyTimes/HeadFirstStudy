@@ -18,6 +18,7 @@ public class Main {
         menu.setName("父级菜单1");
         menu.setName("父级菜单2");
         menu.setName("父级菜单3");
+        // 测试地址1
         MenuItem menuItem = new MenuItem();
         menuItem.setName("子级菜单1");
         menuItem.setName("子级菜单2");
